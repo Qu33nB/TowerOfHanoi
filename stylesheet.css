@@ -9,7 +9,7 @@
 
 #start, #offset, #end {
     display: flex;  
-    flex-direction: column-reverse;  
+    flex-direction: column-reverse;
     align-items: center;
     height: 400px;
     width: 10px;
@@ -23,42 +23,30 @@
     justify-content: space-around;
 }
 
-#disks {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 200px; 
-}
-
-.red {
+#red {
     background-color: red;
-    height: 25%;
-    width: 25%;
+    height: 25px;
+    width: 100px;
     border-radius: 10%;
-    margin: auto;
 }
 
-.yellow {
+#yellow {
     background-color: yellow;
-    height: 50%;
-    width: 50%;
+    height: 50px;
+    width: 125px;
     border-radius: 10%; 
-    margin: auto;
 }
 
-.blue {
+#blue {
     background-color: blue;
-    height: 75%;
-    width: 75%;
+    height: 75px;
+    width: 150px;
     border-radius: 10%;
-    margin: auto;
 }
 
-.orange {
+#orange {
     background-color: orange;
-    height: 100%;
-    width: 100%;
+    height: 100px;
+    width: 175px;
     border-radius: 10%;
-    margin: auto;
-
 }

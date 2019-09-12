@@ -11,7 +11,8 @@
 // Use a variable to keep track of which mode the player is in.
 
 
-// let isClicked = (variable to keep track of which mode player is in)
+let isClicked = document.getElementById()
+
 
 
 // Add a click handler to each of the three towers. Use event.currentTarget inside the event 
@@ -40,11 +41,23 @@
 //              container.appendChild(div)
 //              //This function retuns nothing
 //              }
+const startTower = document.getElementById("start");
+const offsetTower = document.getElementById("offset")
+const endTower = document.getElementById("end");
+
+const orangeDisk = document.getElementById("orange");
+const blueDisk = document.getElementById("blue");
+const yellowDisk = document.getElementById("yellow");
+const redDisk = document.getElementById("red")
+
+red.addEventlistener("click")
+
+
+
 
 //div for each tower
 //div for each disk
 
-//Class = disks
 //CLass = towers
 //Id = specific disks (Red, Yellow, Blue, Orange)
 //Id = towers (Start, Offset, End) Flex-Box
