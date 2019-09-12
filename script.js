@@ -10,6 +10,10 @@
 // second to pick the destination tower. 
 // Use a variable to keep track of which mode the player is in.
 
+
+// let isClicked = (variable to keep track of which mode player is in)
+
+
 // Add a click handler to each of the three towers. Use event.currentTarget inside the event 
 // handler to determine which tower was clicked.
 
@@ -20,7 +24,22 @@
 // Use the DOM method appendChild() to add a disk to a tower (you have already used this method many 
 // times in previous assignments). Note that when you use appendChild on an element that already has a parent, 
 // it is automatically removed from the old parent and added to the new one.
-
+//          function kata(kataNumber, answer) {
+//              //Create the stuff I need
+//              const div = document.createElement('div')
+//              const kataText = document.createElement('p')
+//              const answerText = document.createElement('p')
+//              const hr = document.createElement('hr')
+//              //Give some of that stuff data
+//              kataText.innerHTML = 'Kata ' + kataNumber
+//              answerText.innerHTML = answer
+//              //Put that stuff in the HTML
+//              div.appendChild(kataText)
+//              div.appendChild(answerText)
+//              div.appendChild(hr)
+//              container.appendChild(div)
+//              //This function retuns nothing
+//              }
 
 //div for each tower
 //div for each disk
