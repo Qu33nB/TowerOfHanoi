@@ -1,0 +1,50 @@
+
+
+#tower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+#start, #offset, #end {
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+    height: 400px;
+    width: 25px;
+    background: black;
+    border: solid;
+} 
+
+#towerLabel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.disks {
+    display: flex;
+    flex-direction: column;
+}
+
+#red {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+#yellow {
+    background-color: yellow;
+    height: 100%;   
+}
+
+#blue {
+    background-color: lightblue;
+
+}
+
+#orange {
+    background-color: orange;
+}
