@@ -11,8 +11,6 @@
 // Use a variable to keep track of which mode the player is in.
 
 
-let isClicked = document.getElementById()
-
 
 
 // Add a click handler to each of the three towers. Use event.currentTarget inside the event 
@@ -45,12 +43,34 @@ const startTower = document.getElementById("start");
 const offsetTower = document.getElementById("offset")
 const endTower = document.getElementById("end");
 
-const orangeDisk = document.getElementById("orange");
-const blueDisk = document.getElementById("blue");
-const yellowDisk = document.getElementById("yellow");
-const redDisk = document.getElementById("red")
+let isSelected = false;
 
-red.addEventlistener("click")
+
+startTower.addEventListener('click', clickedTower);
+offsetTower.addEventListener('click', clickedTower);
+endTower.addEventListener('click', clickedTower);
+
+function clickedTower() {
+    // // if(isSelected === false) {
+    //     //if this does contain child elements
+    //     //then select top disk (use last or first)
+    //     //set isSelected to true
+    // } else { // isSelected is true
+    //     //does this tower have disks? look for number of child elements
+    //         if //the disk is larger
+    //             // move the disk there
+    //         else {
+    //             //disk is smaller
+    //             //do not move disk
+    //         }
+    // }
+    // event.currentTarget.classList.add('selected');
+}
+
+// set clickHandler to each tower
+// write a function that when each tower is clicked, it selects 
+// the first disk on that tower and moves it to second clicked location.
+// 
 
 
 
