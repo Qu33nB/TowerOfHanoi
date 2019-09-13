@@ -6,15 +6,6 @@
 
 //********Hints******
 
-// You will want to have the player click twice for each move - first to pick the source tower, 
-// second to pick the destination tower. 
-// Use a variable to keep track of which mode the player is in.
-
-
-let isClicked = document.getElementById()
-
-
-
 // Add a click handler to each of the three towers. Use event.currentTarget inside the event 
 // handler to determine which tower was clicked.
 
@@ -41,26 +32,78 @@ let isClicked = document.getElementById()
 //              container.appendChild(div)
 //              //This function retuns nothing
 //              }
+
+//Logic:     Cited: (https://js-algorithms.tutorialhorizon.com/2016/01/11/tower-of-hanoi/)
+//      Move a tower of height-1 to the buffer peg, using the destination peg.
+//      Move the remaining disk to the destination peg.
+//      Move the tower of height-1 from the buffer peg to the destination peg using the source peg.
+
+//      To move n disks, the min number of required steps are 2^n - 1. 
+//      For example, to move 3 disks the min number of steps are (2^3 - 1) = 7.
+
+//if (let tower of)
+
 const startTower = document.getElementById("start");
-const offsetTower = document.getElementById("offset")
+const offsetTower = document.getElementById("offset");
 const endTower = document.getElementById("end");
 
-const orangeDisk = document.getElementById("orange");
-const blueDisk = document.getElementById("blue");
-const yellowDisk = document.getElementById("yellow");
-const redDisk = document.getElementById("red")
 
-red.addEventlistener("click")
 
+let isSelected = false;
+
+
+startTower.addEventListener('click', clickedTower);
+offsetTower.addEventListener('click', clickedTower);
+endTower.addEventListener('click', clickedTower);
+
+
+
+function clickedTower(event:click) {
+    if(isSelected === false) {
+        console.log(event.currentTarget.childElementCount)
+        // if (event.currentTarget.childElementCount > 0){
+        //     //then select top disk (use last or first)
+        //     event.currentTarget.lastElementChild;
+        //     //set isSelected to true
+        //     return isSelected = true; 
+        //     } 
+            } 
+        } 
+        // console.log(clickedTower())
+        //     else {
+        //         if (currentTarget.childElementCount > 0) {
+        //             currentTarget.scrollWidth > currentTarget.scrollWidth
+        //         }
+        //     }
+             
+        // }
+
+    // } else { // isSelected is true
+    //     //does this tower have disks? look for number of child elements
+    //         if //the disk is larger
+    //             // move the disk there
+    //         else {
+    //             //disk is smaller
+    //             //do not move disk
+    //         }// event.currentTarget.classList.add('selected');
+    // }
+    
 
 
 
 //div for each tower
 //div for each disk
 
-//CLass = towers
+//Class = towers
 //Id = specific disks (Red, Yellow, Blue, Orange)
 //Id = towers (Start, Offset, End) Flex-Box
 
 //Read and click, and save and click
 
+// How big is the content?Section
+// If you need to know the actual size of the content, regardless of how much of it is currently visible, 
+// you need to use the Element.scrollWidth and Element.scrollHeight properties. These return the width and 
+// height of the entire content of an element, even if only part of it is presently visible due to the use of scroll bars.
+
+// For example, if a 600x400 pixel element is being displayed inside a 300x300 pixel scrollbox, scrollWidth will 
+// return 600 while scrollHeight will return 400

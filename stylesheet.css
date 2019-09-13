@@ -50,3 +50,7 @@
     width: 175px;
     border-radius: 10%;
 }
+
+.selected {
+    background: red;
+}
