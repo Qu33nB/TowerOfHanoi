@@ -47,47 +47,49 @@ const startTower = document.getElementById("start");
 const offsetTower = document.getElementById("offset");
 const endTower = document.getElementById("end");
 
-
-
 let isSelected = false;
-
 
 startTower.addEventListener('click', clickedTower);
 offsetTower.addEventListener('click', clickedTower);
 endTower.addEventListener('click', clickedTower);
 
 
+function clickedTower() {
+    if (isSelected === false) {
+        let srcTower = event.currentTarget
+        topDisk = srcTower.lastElementChild
+        if (event.currentTarget.childElementCount > 0) {
+            //then select top disk (use last or first)
+            topDisk.classList.add("selected")
+            //set isSelected to true
+            isSelected = true;
+        }
+        }  else {  // isSelected is true
+            let destTower = event.currentTarget
+            if (destTower.childElementCount === 0) {
+                destTower.appendChild(topDisk)
+                topDisk.classList.remove("selected")
+            } else if (event.currentTarget.childElementCount > 0) {
+            isSelected = false
+            //     //         if //the disk is larger
+            //     if (event.currentTarget.offsetWidth > event.target.offsetWidth) {
 
-function clickedTower(event:click) {
-    if(isSelected === false) {
-        console.log(event.currentTarget.childElementCount)
-        // if (event.currentTarget.childElementCount > 0){
-        //     //then select top disk (use last or first)
-        //     event.currentTarget.lastElementChild;
-        //     //set isSelected to true
-        //     return isSelected = true; 
-        //     } 
-            } 
-        } 
-        // console.log(clickedTower())
-        //     else {
-        //         if (currentTarget.childElementCount > 0) {
-        //             currentTarget.scrollWidth > currentTarget.scrollWidth
-        //         }
-        //     }
-             
-        // }
+            //         //             // move the disk there
+            //         //         else {
+            //         //             //disk is smaller
+            //         //             //do not move disk
 
-    // } else { // isSelected is true
-    //     //does this tower have disks? look for number of child elements
-    //         if //the disk is larger
-    //             // move the disk there
-    //         else {
-    //             //disk is smaller
-    //             //do not move disk
-    //         }// event.currentTarget.classList.add('selected');
-    // }
-    
+            //     }
+
+            //     event.currentTarget.classList.add('selected');
+            //     // }
+            // }
+        
+        }
+    }
+
+
+    //console.log(clickedTower())
 
 
 
