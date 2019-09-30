@@ -25,30 +25,30 @@
 
 .red {
     background-color: red;
-    height: 25px;
+    height: 45px;
     width: 100px;
-    border-radius: 10%;
+    border-radius: 20%;
 }
 
 .yellow {
     background-color: yellow;
-    height: 50px;
+    height: 55px;
     width: 125px;
-    border-radius: 10%; 
+    border-radius: 20%; 
 }
 
 .blue {
     background-color: blue;
-    height: 75px;
+    height: 65px;
     width: 150px;
-    border-radius: 10%;
+    border-radius: 20%;
 }
 
 .orange {
     background-color: orange;
-    height: 100px;
+    height: 75px;
     width: 175px;
-    border-radius: 10%;
+    border-radius: 20%;
 }
 
 .selected {
